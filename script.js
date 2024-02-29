@@ -15,6 +15,14 @@ const draw = () => {
     p.classList.add('macroText')
     div.appendChild(p)
     p.textContent = el
+    p.addEventListener('click', () => {
+      const textarea = document.createElement('textarea')
+      document.body.append(textarea)
+      textarea.value = p.textContent
+      textarea.select()
+      document.execCommand('copy')
+      textarea.remove()
+    })
     const deleteBtn = document.createElement('button')
     deleteBtn.classList.add('deleteBtn')
     deleteBtn.textContent = 'X'
