@@ -50,3 +50,21 @@ body {
 .btn:hover {
   background-position: right center;
 }
+
+.macro {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  user-select: none;
+}
+
+.macro:last-child {
+  margin-bottom: 0;
+}
+
+.deleteBtn {
+  max-width: 200px;
+  background-color: orangered;
+}
